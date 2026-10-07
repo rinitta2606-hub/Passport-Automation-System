@@ -100,6 +100,6 @@ def create_app(db_path=None):
 
     return app
 
-
+app = create_app()
 if __name__ == "__main__":
     create_app().run(debug=os.environ.get("FLASK_DEBUG") == "1")
