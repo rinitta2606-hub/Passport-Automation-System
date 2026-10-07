@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.role-buttons,
+.menu {
+    margin: 25px 0;
+}
+
+button {
+    padding: 12px 22px;
+    margin: 7px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.login-box,
+.form-box,
+.dashboard {
+    background: white;
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.login-box {
+    max-width: 420px;
+}
+
+.login-box input,
+.form-box input {
+    display: block;
+    width: 90%;
+    padding: 12px;
+    margin: 12px auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.application-card {
+    text-align: left;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.success {
+    background: #e8f5e9;
+}
+
+.error {
+    background: #ffebee;
+}
+
+.logout {
+    background: #d9534f;
+}
