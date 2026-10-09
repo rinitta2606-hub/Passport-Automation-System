@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="theme-color" content="#07152e">
     <title>Passport Management System</title>
 
     <link rel="stylesheet"
@@ -12,29 +12,150 @@
 </head>
 
 <body>
-
     <div class="container">
 
-        <h1>Passport Management System</h1>
+        <header class="site-header">
+            <a class="brand" href="/" aria-label="Passport Management home">
+                <span class="brand-icon">✈</span>
+                <span>PASS<span class="brand-accent">PORT</span></span>
+            </a>
+            <span class="header-tag">SECURE <span>•</span> SIMPLE <span>•</span> DIGITAL</span>
+        </header>
 
-        <p>Select your role to continue</p>
+        <section class="hero">
+            <div class="hero-copy">
+                <div class="eyebrow">
+                    <span class="live-dot"></span>
+                    YOUR JOURNEY STARTS HERE
+                </div>
 
-        <div class="role-buttons">
-            <button onclick="showLogin('applicant')">Applicant</button>
-            <button onclick="showLogin('admin')">Administrator</button>
-            <button onclick="showLogin('police')">Police Officer</button>
-        </div>
+                <h1>Passport Management <span>System</span></h1>
 
-        <!-- Login / Registration -->
+                <p class="hero-description">
+                    Your gateway to seamless passport services.
+                    Apply, verify and track your passport application
+                    through one convenient digital platform.
+                </p>
+
+                <div class="hero-points">
+                    <span>✓ Easy application</span>
+                    <span>✓ Status tracking</span>
+                    <span>✓ Secure access</span>
+                </div>
+            </div>
+
+            <div class="hero-art" aria-label="Passport and travel illustration">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="globe">🌐</div>
+                <div class="plane">✈</div>
+
+                <div class="passport-illustration">
+                    <span class="passport-world">✦</span>
+                    <span class="passport-country">REPUBLIC OF INDIA</span>
+                    <span class="passport-title">PASSPORT</span>
+                    <span class="passport-symbol">◎</span>
+                </div>
+
+                <div class="art-caption">
+                    <span class="caption-dot"></span>
+                    Explore a world of possibilities
+                </div>
+            </div>
+        </section>
+
+        <section class="roles-section">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">PORTAL ACCESS</span>
+                    <h2>Choose your role</h2>
+                    <p>Select your portal to continue.</p>
+                </div>
+                <span class="secure-label">🔒 Secure sign-in</span>
+            </div>
+
+            <div class="role-buttons role-grid">
+
+                <button class="role-card applicant-card"
+                        onclick="showLogin('applicant')">
+                    <span class="role-icon">👤</span>
+                    <span class="role-name">Applicant</span>
+                    <span class="role-description">
+                        Register, apply for a passport and track your application.
+                    </span>
+                    <span class="role-action">
+                        Continue <span>→</span>
+                    </span>
+                </button>
+
+                <button class="role-card admin-card"
+                        onclick="showLogin('admin')">
+                    <span class="role-icon">🛡️</span>
+                    <span class="role-name">Administrator</span>
+                    <span class="role-description">
+                        Manage accounts, review documents and process applications.
+                    </span>
+                    <span class="role-action">
+                        Continue <span>→</span>
+                    </span>
+                </button>
+
+                <button class="role-card police-card"
+                        onclick="showLogin('police')">
+                    <span class="role-icon">👮</span>
+                    <span class="role-name">Police Officer</span>
+                    <span class="role-description">
+                        Access verification requests and update verification status.
+                    </span>
+                    <span class="role-action">
+                        Continue <span>→</span>
+                    </span>
+                </button>
+
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <span class="feature-icon blue-icon">🔐</span>
+                <div>
+                    <h3>Secure Access</h3>
+                    <p>Role-based login</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon teal-icon">⚡</span>
+                <div>
+                    <h3>Easy Tracking</h3>
+                    <p>Follow application progress</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon purple-icon">🌍</span>
+                <div>
+                    <h3>Digital Workflow</h3>
+                    <p>Connected application stages</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Existing JavaScript login and registration area -->
         <div id="login-section"></div>
 
-        <!-- Dashboards -->
+        <!-- Existing dashboards -->
         <div id="main-section"></div>
+
+        <footer class="site-footer">
+            <span class="footer-mark">✦</span>
+            Passport Management System
+            <span class="footer-separator">•</span>
+            Academic Project
+        </footer>
 
     </div>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-
 </body>
-
 </html>
