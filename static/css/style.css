@@ -316,3 +316,444 @@ small {
         transition-duration: 0.01ms !important;
     }
 }
+
+
+/* ===== NEW PASSPORT HOMEPAGE ===== */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 0 30px;
+    border-bottom: 1px solid rgba(111, 180, 255, 0.18);
+    text-align: left;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.brand:hover {
+    text-decoration: none;
+}
+
+.brand-icon {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+    background: linear-gradient(135deg, #1688ff, #25d9d0);
+    font-size: 24px;
+}
+
+.brand-accent {
+    color: #42dfeb;
+}
+
+.header-tag {
+    color: #a9c9ef;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+}
+
+.header-tag span {
+    color: #25d9d0;
+    margin: 0 7px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 25px;
+    padding: 65px 0 55px;
+    text-align: left;
+}
+
+.eyebrow,
+.section-kicker {
+    color: #50dfdf;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.live-dot,
+.caption-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 7px;
+    border-radius: 50%;
+    background: #35e0bd;
+    box-shadow: 0 0 12px #35e0bd;
+}
+
+.hero h1 {
+    margin: 20px 0;
+    font-size: clamp(34px, 4.5vw, 59px);
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+.hero h1 span {
+    color: #40d8e8;
+    background: none;
+    -webkit-text-fill-color: #40d8e8;
+}
+
+.hero-description {
+    max-width: 560px;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.hero-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin-top: 25px;
+    color: #d6f5ff;
+    font-size: 13px;
+}
+
+.hero-points span::first-letter {
+    color: #43e2c5;
+}
+
+.hero-art {
+    min-height: 310px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border: 1px solid rgba(69, 179, 255, 0.22);
+    border-radius: 28px;
+    background:
+        radial-gradient(circle at 50% 45%, rgba(22, 136, 255, 0.32), transparent 48%),
+        linear-gradient(145deg, rgba(15, 49, 91, 0.9), rgba(6, 19, 45, 0.8));
+}
+
+.orbit {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(61, 201, 255, 0.28);
+    border-radius: 50%;
+}
+
+.orbit-one {
+    transform: scaleX(1.45) rotate(-25deg);
+}
+
+.orbit-two {
+    transform: scaleX(0.8) rotate(55deg);
+}
+
+.globe {
+    position: absolute;
+    top: 25px;
+    right: 28px;
+    font-size: 40px;
+    opacity: 0.75;
+}
+
+.plane {
+    position: absolute;
+    top: 48px;
+    left: 28px;
+    color: #5fe5ff;
+    font-size: 38px;
+    transform: rotate(-15deg);
+}
+
+.passport-illustration {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 225px;
+    padding: 18px;
+    border: 1px solid #d5b36c;
+    border-radius: 12px;
+    color: #f5d990;
+    background: linear-gradient(145deg, #173b70, #07172f 75%);
+    box-shadow: 12px 18px 38px rgba(0, 0, 0, 0.38);
+    transform: rotate(-7deg);
+}
+
+.passport-world {
+    font-size: 55px;
+    line-height: 1.3;
+}
+
+.passport-country {
+    margin-top: 12px;
+    font-size: 9px;
+    letter-spacing: 1.2px;
+}
+
+.passport-title {
+    margin-top: 22px;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.passport-symbol {
+    margin-top: 12px;
+    font-size: 25px;
+}
+
+.art-caption {
+    position: absolute;
+    right: 12px;
+    bottom: 15px;
+    left: 12px;
+    color: #b6d7f8;
+    font-size: 11px;
+    text-align: center;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+.section-heading h2 {
+    margin: 7px 0 0;
+    font-size: clamp(24px, 3vw, 32px);
+}
+
+.section-heading p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.secure-label {
+    padding: 9px 13px;
+    border: 1px solid rgba(71, 214, 199, 0.25);
+    border-radius: 30px;
+    color: #a7f5e8;
+    background: rgba(37, 217, 208, 0.07);
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.role-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px !important;
+    margin: 0 !important;
+    align-items: stretch;
+}
+
+button.role-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 245px;
+    margin: 0;
+    padding: 24px;
+    color: #fff;
+    text-align: left;
+    white-space: normal;
+    border-radius: 19px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.applicant-card {
+    background: linear-gradient(145deg, #087ee8, #1242a2) !important;
+}
+
+.admin-card {
+    background: linear-gradient(145deg, #00ad9b, #075b70) !important;
+}
+
+.police-card {
+    background: linear-gradient(145deg, #8750ef, #3d2aab) !important;
+}
+
+.role-card:hover {
+    transform: translateY(-6px);
+    filter: brightness(1.08);
+}
+
+.role-icon {
+    display: grid;
+    place-items: center;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    border-radius: 17px;
+    background: rgba(255, 255, 255, 0.14);
+    font-size: 28px;
+}
+
+.role-name {
+    margin-bottom: 8px;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.role-description {
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.role-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.role-action span {
+    display: grid;
+    place-items: center;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 35px;
+    padding: 22px;
+    border: 1px solid rgba(111, 180, 255, 0.2);
+    border-radius: 18px;
+    background: rgba(8, 28, 57, 0.65);
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+}
+
+.feature-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 43px;
+    height: 43px;
+    border-radius: 13px;
+    background: rgba(22, 136, 255, 0.14);
+}
+
+.teal-icon {
+    background: rgba(37, 217, 208, 0.13);
+}
+
+.purple-icon {
+    background: rgba(121, 87, 255, 0.16);
+}
+
+.feature h3 {
+    margin: 0;
+    font-size: 13px;
+}
+
+.feature p {
+    margin: 4px 0 0;
+    font-size: 11px;
+}
+
+.site-footer {
+    margin-top: 35px;
+    color: #92accd;
+    font-size: 12px;
+}
+
+.footer-mark {
+    color: #42dce9;
+    margin-right: 7px;
+}
+
+.footer-separator {
+    margin: 0 9px;
+    color: #35d6d0;
+}
+
+/* Keep the role cards responsive */
+
+@media (max-width: 800px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 42px 0;
+    }
+
+    .hero-art {
+        min-height: 290px;
+    }
+
+    .role-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    button.role-card {
+        min-height: 210px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .header-tag {
+        font-size: 10px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-points {
+        flex-direction: column;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .secure-label {
+        white-space: normal;
+    }
+}
